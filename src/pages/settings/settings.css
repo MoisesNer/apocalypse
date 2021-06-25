@@ -1,0 +1,134 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+
+    /* gradient images */
+    --linearImages: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(80, 80, 80, .5)
+        );
+
+    /* background buttons */
+    --hoverGray: linear-gradient(to bottom, #4d4d4d, 5%, #808080);
+    --shadowGray:inset 0px 1px 0px 0px #949494;
+    --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+}
+
+.settings{
+    display: flex;
+}
+.settingsWrapper{
+    flex: 9;
+}
+
+.fileInput{
+    display: none;
+    padding: 20px;
+}
+
+.settingsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--title-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.settingsUpdateTitle{
+    /* font-size: 30px; */
+    margin: 10px;
+    color: var(--primary1);
+    font-family: var(--title-font);
+}
+
+.settingsDeleteTitle{
+    color: var(--primary3);
+    cursor: pointer;
+    font-family: var(--title-font);
+    font-size: 20px;
+    margin: 10px;
+}
+
+.settingsForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsPP{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;   
+}
+
+.settingsPP > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingsPPIcon{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--primary1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.settingsForm > label{
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    color: var(--primary3);
+}
+
+.settingsForm >input{
+    color: var(--primary1);
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    font-size: larger;
+    border-bottom: 1px solid var(--primary1);
+}
+
+.settingsSubmit{
+    align-self: center;
+    color: white;
+    background-color: var(--primary1);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    margin-top: 20px;
+    box-shadow: inset 0px 1px 0px 0px #949494;
+}
+
+.settingsSubmit:hover {
+    position: relative;
+    top: -1px;
+    background: var(--hoverGray);
+}
+
+.settingsSubmit:active{
+    top: 1px;
+}

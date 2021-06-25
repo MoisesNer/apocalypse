@@ -1,0 +1,112 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+
+    /* gradient images */
+    --linearImages: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(80, 80, 80, .5)
+        );
+
+    /* background buttons */
+    --hoverGray: linear-gradient(to bottom, #4d4d4d, 5%, #808080);
+    --shadowGray:inset 0px 1px 0px 0px #949494;
+    --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+}
+
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--linearImages),
+        url('https://www.xcalibrepaintball.com/wp-content/uploads/2018/07/5Top-Slider-EVENTS-TO-COMPETE.jpg');
+    background-size: cover;
+    align-items: center;
+}
+.registerTitle{
+    color: white;
+    font-family: var(--title-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    font-size: 60px;
+}
+
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--text-font);
+}
+
+.registerForm > label{
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    color: var(--primary2);
+}
+
+.registerInput{
+    color: var(--primary3);
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    font-size: larger;
+    border-bottom: 1px solid var(--primary1);
+    background-color: black;
+    }
+
+.registerButton{
+    color: white;
+    background-color: var(--primary1);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    margin-top: 20px;
+    align-self: center;
+    box-shadow:inset 0px 1px 0px 0px #949494;
+}
+
+.registerButton:hover{
+    background: var(--hoverGray);
+    position:relative;
+	top:-1px;
+}
+.registerButton:active{
+    top: 1px;
+}
+
+.registerLoginButton{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: var(--primary3);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+}
+.registerLoginButton:hover {
+	background:var(--hoverRed);
+    top:69px;
+}
+.registerLoginButton:active {
+    top:71px;
+}

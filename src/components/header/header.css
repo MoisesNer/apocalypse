@@ -1,0 +1,52 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+
+    /* gradient images */
+    --linearImages: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(80, 80, 80, .5)
+        );
+
+    /* background buttons */
+    --hoverGray: linear-gradient(to bottom, #4d4d4d, 5%, #808080);
+    --shadowGray:inset 0px 1px 0px 0px #949494;
+    --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+}
+
+.header{
+    /* margin-top: 60px; */
+}
+
+.headerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--title-font);
+    color: var(--primary2);
+}
+
+.headerTitleSm{
+    position: absolute;
+    top: 18%;
+    font-size: 30px;
+}
+
+.headerTitleLg{
+    position: absolute;
+    top: 33%;
+    font-size: 100px;
+}
+
+.headerImg{
+    width: 100%;
+    height: 650px;
+    margin-top: 0px;
+    object-fit: cover;
+}

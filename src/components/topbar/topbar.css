@@ -1,0 +1,83 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+
+    /* gradient images */
+    --linearImages: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(80, 80, 80, .5)
+        );
+
+    /* background buttons */
+    --hoverGray: linear-gradient(to bottom, #4d4d4d, 5%, #808080);
+    --shadowGray:inset 0px 1px 0px 0px #949494;
+    --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+}
+
+
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: var(--title-font);
+    z-index: 999;
+}
+
+.topLeft, .topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topApoc{
+    font-weight: 800;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.topIcon{
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.topCenter{
+    flex: 6;
+}
+
+.topList{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.topListItem{
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.searchIcon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.topLogo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
