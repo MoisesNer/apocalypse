@@ -1,22 +1,20 @@
 import React from 'react'
 import './topbar.css'
 import { Link } from 'react-router-dom'
+import logosmall from '../../assets/logosmall-white2.png'
 
 export default function TopBar() {
     const user = false;
 
     return (
         <div className="top">
-            <div className='topApoc'>
-                APOCALYPSE
-
-            </div>
             <div className="topLeft">
-                <i className="topIcon fab fa-facebook-square"></i>
+            <img src={logosmall} alt="paintball APOCALYPSE logo" className='toplogo' />
+                {/* <i className="topIcon fab fa-facebook-square"></i>
                 <i className="topIcon fab fa-instagram-square"></i>
                 <i className="topIcon fab fa-linkedin"></i>
                 <i className="topIcon fab fa-pinterest-square"></i>
-                <i className="topIcon fab fa-twitter-square"></i>
+                <i className="topIcon fab fa-twitter-square"></i> */}
             </div>
             <div className="topCenter">
                 <ul className="topList">

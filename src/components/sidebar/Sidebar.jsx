@@ -1,12 +1,14 @@
 import React from 'react'
 import "./sidebar.css"
+import logobig from '../../assets/logobig.png'
 
 export default function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebarItem">
                 <span className="sidebarTitle">ABOUT US</span>
-                <img className="sidebarImg" src="https://i.pinimg.com/originals/7a/20/40/7a204013292a5a6afbd5b8d3ee34e09c.jpg" alt="" />
+                <img className="sidebarImg" src={logobig} alt="" />
+                <img src="" alt="" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique voluptate recusandae perferendis distinctio beatae deserunt, nobis excepturi sapiente est.</p>
             </div>
             <div className="sidebarItem">
