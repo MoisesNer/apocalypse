@@ -9,7 +9,9 @@ export default function TopBar() {
     return (
         <div className="top">
             <div className="topLeft">
-            <img src={logosmall} alt="paintball APOCALYPSE logo" className='toplogo' />
+                <Link to='/'>
+                    <img src={logosmall} alt="paintball APOCALYPSE logo" className='toplogo' />
+                </Link>
                 {/* <i className="topIcon fab fa-facebook-square"></i>
                 <i className="topIcon fab fa-instagram-square"></i>
                 <i className="topIcon fab fa-linkedin"></i>
@@ -22,7 +24,7 @@ export default function TopBar() {
                         <Link className='link' to='/'>Home</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className='link' to='/about'>Contact</Link>
+                        <Link className='link' to='/contact'>Contact</Link>
                     </li>
                     <li className="topListItem">
                         <Link className='link' to='/about'>About</Link>
@@ -52,7 +54,7 @@ export default function TopBar() {
                     </ul>
                 )}
 
-                <i className="searchIcon fas fa-search"></i>
+                {/* <i className="searchIcon fas fa-search"></i> */}
             </div>
         </div>
     )

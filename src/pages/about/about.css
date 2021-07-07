@@ -20,35 +20,82 @@
     --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
 }
 
-.header{
-    /* margin-top: 60px; */
-}
-
-.headerTitles{
+.aboutTitles{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--title-font);
     color: var(--primary2);
-}
+    }
 
-.headerTitleSm{
+.aboutTitleSm{
     position: absolute;
     top: 15%;
     font-size: 30px;
+    max-width: 70%;
+    text-align: center;
     text-transform: uppercase;
+
 }
 
-.headerTitleLg{
+.aboutTitleLg{
     position: absolute;
     top: 25%;
     font-size: 100px;
+    max-width: 80%;
+    text-align: center;
     text-transform: uppercase;
+
 }
 
-.headerImg{
+.aboutImg{
     width: 100%;
     height: 650px;
     margin-top: 0px;
     object-fit: cover;
+}
+.aboutTeam{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text-font);
+    color: black;
+}
+.aboutTeamTitle{
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutTeamText{
+    margin-top: 10%;
+    font-size:30px;
+    max-width: 70%;
+    text-align: center;
+}
+.profilePictures{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.profilePictures > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.profileText {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10%;
+}
+.profileTextPerson{
+    width: 25%;
+    padding: 2%;
 }

@@ -1,0 +1,109 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+
+    /* gradient images */
+    --linearImages: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(80, 80, 80, .5)
+        );
+
+    /* background buttons */
+    --hoverGray: linear-gradient(to bottom, #4d4d4d, 5%, #808080);
+    --shadowGray:inset 0px 1px 0px 0px #949494;
+    --hoverRed: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+}
+
+.contactTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--title-font);
+    color: var(--primary2);
+    }
+
+.contactTitleSm{
+    position: absolute;
+    top: 15%;
+    font-size: 30px;
+    max-width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.contactTitleLg{
+    position: absolute;
+    top: 25%;
+    font-size: 100px;
+    max-width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.contactImg{
+    width: 100%;
+    height: 650px;
+    margin-top: 0px;
+    object-fit: cover;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contactInfo > h1{
+    font-family: var(--text-font);
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contactInfo > h3{
+    font-family: var(--text-font);
+    margin-top: 5%;
+    font-size:30px;
+    max-width: 70%;
+    text-align: center;
+    font-weight: 200;
+}
+.contactInfo > h3> span {
+    font-weight: 500;
+    color: var(--primary3);
+}
+
+.sidebarSocial{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarIcon{
+    font-size: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
+.contactMap{
+    padding-top: 2.5%;
+    margin: auto;
+}
+.contactMap > img{
+    width: 100%;
+}
