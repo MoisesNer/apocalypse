@@ -26,11 +26,21 @@ export default function Sidebar() {
                 <span className="sidebarTitle">FOLLOW US</span>
             </div>
             <div className="sidebarSocial">
-                <i className="sidebarIcon fab fa-instagram-square"></i>
-                <i className="sidebarIcon fab fa-linkedin"></i>
-                <i className="sidebarIcon fab fa-facebook-square"></i>
-                <i className="sidebarIcon fab fa-pinterest-square"></i>
-                <i className="sidebarIcon fab fa-twitter-square"></i>
+                <a href="https://www.facebook.com/" target='_blank' rel="noreferrer">
+                    <i className="sidebarIcon fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/" target='_blank' rel="noreferrer">
+                    <i className="sidebarIcon fab fa-instagram-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target='_blank' rel="noreferrer">
+                    <i className="sidebarIcon fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.pinterest.com/" target='_blank' rel="noreferrer">
+                    <i className="sidebarIcon fab fa-pinterest-square"></i>
+                </a>
+                <a href="https://twitter.com/?lang=en" target='_blank' rel="noreferrer">
+                    <i className="sidebarIcon fab fa-twitter-square"></i>
+                </a>
             </div>
         </div>
     )
