@@ -28,6 +28,10 @@
     flex-direction: column;
     align-items: center;
 }
+.postCats{
+    display: flex;
+    /* flex-direction: row; */
+}
 
 .postCat{
     font-family: var(--title-font);
@@ -35,7 +39,7 @@
     color: var(--primary3);
     line-height: 40px;
     margin: 0 20px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .postTitle{
@@ -87,7 +91,7 @@
 }
 @media (max-width: 1024px) {
     .post{
-        width: 200px;
+        width: 300px;
         margin: 30px 25px ;
     }
     .postImg{
@@ -99,5 +103,24 @@
 }
 
 @media (max-width: 768px) {
+    .post{
+        margin: 15px 15px;
+    }
+    .post{
+        width: 100%;
+        margin: 15px 20px;
+    }
+    .postCats{
 
+        border-color: aqua;
+    }
+}
+
+@media (max-width: 768px) {
+    .post{
+        margin: 0;
+    }
+    .post{
+        margin: 15px 20px;
+    }
 }

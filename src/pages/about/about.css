@@ -35,7 +35,6 @@
     max-width: 70%;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .aboutTitleLg{
@@ -45,19 +44,19 @@
     max-width: 80%;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .aboutImg{
     width: 100%;
-    height: 650px;
+    height: 50vh;
     margin-top: 0px;
     object-fit: cover;
 }
+
 .aboutTeam{
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -73,22 +72,11 @@
 
 .aboutTeamText{
     margin-top: 10%;
+    margin-bottom: 5%;
     font-size:30px;
     max-width: 70%;
     text-align: center;
-}
-.profilePictures{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.profilePictures > img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 15%;
-    margin-bottom: 5%;
+
 }
 .profileText {
     width: 100%;
@@ -96,6 +84,78 @@
     margin-bottom: 10%;
 }
 .profileTextPerson{
+    display: flex;
+    flex-direction: column;
     width: 25%;
     padding: 2%;
+    margin: auto;
+}
+.profileTextPerson > h1{
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.profileTextPerson > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+@media (max-width: 768px){
+    .aboutTitleSm{
+        font-size: 15px;
+    }
+    
+    .aboutTitleLg{
+        font-size: 30px;
+        max-width: 80%;
+    }
+
+    .aboutTeamTitle{
+        font-size: 20px;
+    }
+    .aboutTeamText{
+        font-size: 12px;
+    }
+
+    .profileTextPerson > img{
+        width: 100px;
+        height: 100px;
+    }
+    .profileTextPerson > h1{
+        font-size: 15px;
+    }
+    .profileTextPerson > p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .aboutTitleSm{
+        font-size: 11px;
+    }
+    .aboutTitleLg{
+        font-size: 15px;
+        max-width: 80%;
+    }
+    .profileText {
+        flex-direction: column;
+        width: 100%;
+    }
+    .profileTextPerson{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+    }
+    .profileTextPerson > img{
+        /* width: 50px;
+        height: 50px; */
+        margin: 0;
+    }
+    .profileTextPerson > p{
+        display: none;
+    }
 }

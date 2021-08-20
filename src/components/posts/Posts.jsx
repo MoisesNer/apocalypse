@@ -8,8 +8,6 @@ import { withProjectConsumer } from '../../context'
 function ApocalypseContainer({context}) {
 
     const { projects } = context;
-    // console.log(projects[0].slug);
-
 
     return (
         <div className="posts">

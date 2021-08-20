@@ -4,7 +4,8 @@ import './write.css'
 export default function Write() {
     return (
         <div className='write'>
-            <img src="https://images.unsplash.com/photo-1522515218385-a5488252fa90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" className="writeImg" />
+            <img src="https://images.unsplash.com/photo-1522515218385-a5488252fa90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
+            alt="write background" className="writeImg" />
             <form className="writeForm">
                 <div className="writeFormGroup">
                     <label htmlFor="fileInput">
