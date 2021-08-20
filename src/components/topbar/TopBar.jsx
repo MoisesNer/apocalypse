@@ -20,17 +20,17 @@ export default function TopBar() {
             </div>
             <div className="topCenter">
                 <ul className="topList">
-                    <li className="topListItem">
+                    {/* <li className="topListItem">
                         <Link className='link' to='/'>Home</Link>
-                    </li>
+                    </li> */}
                     <li className="topListItem">
                         <Link className='link' to='/contact'>Contact</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className='link' to='/about'>About</Link>
+                        <Link className='link' to='/gallery'>Gallery</Link>
                     </li>
                     <li className="topListItem">
-                        <Link className='link' to='/gallery'>Gallery</Link>
+                        <Link className='link' to='/about'>About</Link>
                     </li>
                     <li className="topListItem">
                         {user && "LOGOUT"}

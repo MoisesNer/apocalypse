@@ -1,14 +1,39 @@
 import React from 'react'
 import "./posts.css"
-import Post from "../post/Post"
+import{ Link } from 'react-router-dom'
 
-export default function Posts() {
+import { withProjectConsumer } from '../../context'
+
+
+function ApocalypseContainer({context}) {
+
+    const { projects } = context;
+    // console.log(projects[0].slug);
+
+
     return (
         <div className="posts">
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
+            {projects.map((item, index) =>(
+            <div className='post' key={index}>
+            <img
+                className='postImg'
+                src={item.image}
+                alt={item.alt} />
+            <div className="postInfo">
+                <div className="postCats">
+                    <span className="postCat">Cost: ${item.cost}</span>
+                    <span className="postCat">Field: {item.field}</span>
+                </div>
+                <span className="postTitle">{item.title}.</span>
+                <hr />
+                <span className="postDate">Pax: {item.pax}</span>
+            </div>
+            <p className="postDescription"> {item.description}</p>
+            <Link className='btnGlobal' to={item.slug}>See Details</Link>
+        </div>
+            ))}
         </div>
     )
 }
+
+export default withProjectConsumer(ApocalypseContainer)

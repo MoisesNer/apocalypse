@@ -1,3 +1,98 @@
+:root {
+    --primary1:#4d4d4d;
+    --primary2: #cccccc;
+    --primary3: #b30000;
+    /* black */
+    /* white */
+    --title-font:'Josefin Sans', sans-serif;
+    --text-font:'Montserrat', sans-serif;
+    --small-font: 'Lora', serif;
+}
+
+.singlePost{
+    flex: 9;
+}
+.singlePostWrapper{
+    padding: 20px;
+    /* padding: 20px 0px 20px 20px; */
+}
+
+.singlePostImg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.singlePostTitle{
+    text-align: center;
+    margin: 30px;
+    font-family:  var(--title-font);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.singlePostEdit{
+    margin-top: 10px;
+    float: right;
+    font-size: 25px;
+}
+
+.singlePostIcon{
+    margin: 0 10px;
+    cursor: pointer;
+    color: var(--primary1);
+}
+.singlePostIcon:last-child{
+    color: var(--primary3);
+}
+
+.singlePostInfo{
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--primary1);
+    font-family: var(--text-font);
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.singlePostDescription{
+    font-size: 20px;
+    font-family: var(--text-font);
+    line-height: 30px;
+    margin: 40px;
+}
+.singlePostDescription::first-letter{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* SINGLE */
+
 .single{
     display: flex;
+}
+
+.img-section{
+/* height: 30vh; */
+margin: 7vh 0;
+}
+.single-image{
+    display: flex;
+    margin: auto;
+}
+
+.single-image img{
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
 }
