@@ -12,6 +12,7 @@ function ApocalypseContainer({context}) {
     return (
         <div className="posts">
             {projects.map((item, index) =>(
+            <Link to={item.slug} key={index} className='post'>
             <div className='post' key={index}>
             <img
                 className='postImg'
@@ -27,8 +28,9 @@ function ApocalypseContainer({context}) {
                 <span className="postDate">Pax: {item.pax}</span>
             </div>
             <p className="postDescription"> {item.description}</p>
-            <Link className='btnGlobal' to={item.slug}>See Details</Link>
+            {/* <Link className='btnGlobal' to={item.slug}>See Details</Link> */}
         </div>
+        </Link>
             ))}
         </div>
     )
